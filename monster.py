@@ -15,30 +15,7 @@ class Monstre(pygame.sprite.Sprite):
         self.rect.x       = 1000
         self.rect.y       = 540
         self.velocity     = 0.1
-        self.animation    = [pygame.image.load('assets/mummy/mummy1.png'),
-        pygame.image.load('assets/mummy/mummy2.png'),
-        pygame.image.load('assets/mummy/mummy3.png'),
-        pygame.image.load('assets/mummy/mummy4.png'),
-        pygame.image.load('assets/mummy/mummy5.png'),
-        pygame.image.load('assets/mummy/mummy6.png'),
-        pygame.image.load('assets/mummy/mummy7.png'),
-        pygame.image.load('assets/mummy/mummy8.png'),
-        pygame.image.load('assets/mummy/mummy9.png'),
-        pygame.image.load('assets/mummy/mummy10.png'),
-        pygame.image.load('assets/mummy/mummy11.png'),
-        pygame.image.load('assets/mummy/mummy12.png'),
-        pygame.image.load('assets/mummy/mummy13.png'),
-        pygame.image.load('assets/mummy/mummy14.png'),
-        pygame.image.load('assets/mummy/mummy15.png'),
-        pygame.image.load('assets/mummy/mummy16.png'),
-        pygame.image.load('assets/mummy/mummy17.png'),
-        pygame.image.load('assets/mummy/mummy18.png'),
-        pygame.image.load('assets/mummy/mummy19.png'),
-        pygame.image.load('assets/mummy/mummy20.png'),
-        pygame.image.load('assets/mummy/mummy21.png'),
-        pygame.image.load('assets/mummy/mummy22.png'),
-        pygame.image.load('assets/mummy/mummy23.png'),
-        pygame.image.load('assets/mummy/mummy24.png')] 
+        self.animation    = [pygame.image.load(f'assets/mummy/mummy{i+1}.png' for i in range(24)),] 
 
 
     def deplacer(self):
