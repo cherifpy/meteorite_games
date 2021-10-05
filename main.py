@@ -33,7 +33,7 @@ nombre           = 0
 time1            = time.time()
 time2            = time.time()
 projectile1      = projectile(game1.player1,game1)
-
+toitoi = 2
 while afficher:
     if not clique_bouton:
         for event in pygame.event.get():
